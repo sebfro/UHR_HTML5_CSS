@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test2</title>
+    <link rel="stylesheet" href="test2.css">
+    <link rel="stylesheet" href="SlideShow_test2.css">
+    <link rel="stylesheet" href="navigationBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="test2.js"></script>
+</head>
+<body>
+
+<!--
+<button style="border:0; background:transparent" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <img src="../Assets/icon-menu.svg" height="20px" width="20px"/>
+</button>
+
+<form class="form-inline" id="searchForm">
+        <input class="form-control mr-sm-2" style="display: none" type="text" id="searchInput" placeholder="Search">
+        <button style="border:0; background:transparent" onclick="toggleSearchInput()">
+            <img src="../Assets/icon-search.svg" height="20px" width="20px"/>
+        </button>
+    </form>
+-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../Assets/logo-mobile.svg" height="60px" width="60px" style="margin-right: 10px"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Aktuelt </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Om UHR</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Råd og utvalg</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Forskning og utdanning
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Temasider
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ressurser
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <a style="border:0; background:transparent" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <img src="../Assets/icon-search.svg" height="20px" width="20px"/>
+        </a>
+        <a class="nav-link" href="#">English</a>
+    </div>
+</nav>
+
+
+<br>
+<br>
+
+<!--
+<input onclick="swapImage(-1)" id="tempBtn" type="image" src="../Assets/icon-arrow.svg" width="12%" height="12%" align="right">
+-->
+<main >
+    <section>
+        <section class="slideShow">
+            <img height="1080" name="slide" src="SlideShow_1.jpg" width="1920">
+            <section>
+                <div id="slideShowBtns">
+                    <div id="slideCounterContainer">
+                        <p id="slideCounter">1/4</p>
+                    </div>
+
+                    <button onclick="swapImage(-1)" >
+                        <span class="previous"></span>
+                    </button>
+                    <button onclick="swapImage(1)">
+                        <span ></span>
+                    </button>
+                </div>
+                <div class="simple_box">
+                    <p><strong class="orangeText">Aktuelt</strong></p>
+                    <p>Vil hjelpe journalister med ny teknologi</p>
+                </div>
+            </section>
+        </section>
+
+        <div id="mobileModeSpacing">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <article class="test" >
+            <p style="text-align: center; padding-bottom: 5%" class="kommendeArrangementerBottomBroders">
+                <strong class="orangeText">KOMMENDE ARRANGEMENTER</strong>
+            </p>
+            <article class="kommendeArrangementerBottomBroders">
+                <input type="image" src="../Assets/icon-arrow.svg" width="12%" height="12%" align="right">
+                <p style="width: 90%">
+                    15.08.17<br>
+                    Arendalsuken: Universitetenes og høyskolenes bidrag til omstiling...
+                </p>
+            </article>
+
+            <article class="kommendeArrangementerBottomBroders">
+                <input type="image" src="../Assets/icon-arrow.svg" width="12%" height="12%" align="right">
+                <p >
+                    15.08.17<br>
+                    Arendalsuken: Universitetenes og høyskolenes bidrag til omstiling...
+                </p>
+            </article>
+            <article >
+                <input type="image" src="../Assets/icon-arrow.svg" width="12%" height="12%" align="right">
+                <p>
+                    15.08.17<br>
+                    Arendalsuken: Universitetenes og høyskolenes bidrag til omstiling...
+                </p>
+            </article>
+            <p style="text-align: center; border-top: 2px #E9EAEA solid; font-size: small; padding-top: 5%; color: dodgerblue">
+                <a href="#" style="text-align: center">SE ALLE</a>
+            </p>
+        </article>
+
+    </section>
+</main>
+
+
+
+
+
+
+
+<footer>
+    <section>
+        <article>
+            Besøksadresse:<br>
+            Universitets- og høgskolerådet (UHR)<br>
+            Stortorvet 2 (5. etasje), 0155 Oslo<br>
+            <a href="#">Kontakt oss</a>
+        </article>
+        <article>
+            E-post: <a href="#">postmottak@uhr.no</a><br>
+            Org.nr.: 917 697 825<br>
+            Fakturaadr.: Stortorvet 2, 0155 Oslo<br>
+            EHF-faktura: 917 697 825
+        </article>
+        <article>
+            Telefon: 409 14 969<br>
+            Nettredaktør: <a href="#">redaksjon@uhr.no</a>
+        </article>
+    </section>
+
+    <div class="footer_bottom_text">
+        <p>DESIGN: <a href="#">DESIGN CONTAINER</a>, UTVIKLING: <a href="#">ACOS</a></p>
+    </div>
+
+</footer>
+
+
+</body>
+</html>
